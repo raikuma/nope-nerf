@@ -1,0 +1,18 @@
+depth:
+  type: None
+pose:
+  learn_pose: True
+rendering:
+  depth_range: [0.0, 1.0]
+  dist_alpha: True
+  sample_option: ndc
+dataloading:
+  path: data/st-nerf
+  scene: ['walking_001']
+  random_ref: 1
+  resize_factor: 2
+training:
+  out_dir:  out/st-nerf/walking_001
+  vis_resolution: [54, 96]
+extract_images:
+  resolution: [540, 960]
