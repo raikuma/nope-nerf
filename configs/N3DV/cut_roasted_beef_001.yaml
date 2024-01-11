@@ -2,6 +2,7 @@ depth:
   type: None
 pose:
   learn_pose: True
+  init_pose: True
 rendering:
   depth_range: [0.0, 1.0]
   dist_alpha: True

@@ -9,11 +9,11 @@ rendering:
   sample_option: ndc
 dataloading:
   path: data/N3DV
-  scene: ['sear_steak_001']
+  scene: ['cook_spinach_001']
   random_ref: 1
   resize_factor: 4
 training:
-  out_dir:  out/N3DV/sear_steak_001
+  out_dir:  out/N3DV/cook_spinach_001
   vis_resolution: [50, 68]
 extract_images:
   resolution: [507, 676]
