@@ -56,7 +56,7 @@ with torch.no_grad():
         fx = field['img'].focal
         fy = field['img'].focal
 
-factor = 4
+factor = cfg['dataloading']['resize_factor']
 
 c2w = learned_poses.cpu().numpy()
 Rt = c2w[:, :3, :]
