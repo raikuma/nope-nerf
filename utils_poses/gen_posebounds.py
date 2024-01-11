@@ -26,7 +26,7 @@ device = torch.device("cuda" if is_cuda else "cpu")
 
 out_dir = cfg['training']['out_dir']
 
-test_loader, field = get_dataloader(cfg, mode='train', shuffle=False)
+test_loader, field = get_dataloader(cfg, mode=cfg['training']['mode'], shuffle=False)
 N_imgs = field['img'].N_imgs
 with torch.no_grad():
     if cfg['pose']['init_pose']:
