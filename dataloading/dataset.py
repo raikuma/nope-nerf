@@ -145,7 +145,7 @@ class DataField(object):
         if load_colmap_poses:
             self.c2ws_colmap = c2ws_colmap[i_train]
         if not use_DPT:
-            self.dpt_depth = load_depths_npz(image_list_train, pred_depth_path, norm=norm_depth)
+            self.dpt_depth = load_depths_npz(self.img_list, pred_depth_path, norm=norm_depth)
         if with_depth:
             self.depth = load_gt_depths(image_list_train, load_dir, crop_ratio=crop_ratio)
         
