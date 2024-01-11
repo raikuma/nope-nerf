@@ -143,7 +143,7 @@ class DataField(object):
         if c2ws is not None:
             self.c2ws = c2ws[idx_list]
         if load_colmap_poses:
-            self.c2ws_colmap = c2ws_colmap[i_train]
+            self.c2ws_colmap = c2ws_colmap[idx_list]
         if not use_DPT:
             self.dpt_depth = load_depths_npz(self.img_list, pred_depth_path, norm=norm_depth)
         if with_depth:
